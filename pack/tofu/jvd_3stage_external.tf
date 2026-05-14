@@ -1,6 +1,6 @@
 
 data "apstra_datacenter_routing_zone" "default" {
-   name    = "default"
+   name    = "Default routing zone"
    blueprint_id = apstra_datacenter_blueprint.DC1-3Stage.id
 }
 
