@@ -5,6 +5,7 @@ resource "apstra_datacenter_routing_zone" "red" {
   blueprint_id      = apstra_datacenter_blueprint.DC1-3Stage.id
   vlan_id           = var.red_rz_vlan_id
   vni               = var.red_rz_vni
+  ip_addressing_type   = "ipv4_ipv6"
   junos_evpn_irb_mode   = "asymmetric"
   dhcp_servers = [var.red_rz_dhcp] 
 }
@@ -14,6 +15,7 @@ resource "apstra_datacenter_routing_zone" "blue" {
   blueprint_id      = apstra_datacenter_blueprint.DC1-3Stage.id
   vlan_id           = var.blue_rz_vlan_id
   vni               = var.blue_rz_vni
+  ip_addressing_type   = "ipv4_ipv6"
   junos_evpn_irb_mode   = "asymmetric"
   dhcp_servers = [var.blue_rz_dhcp]
 }
