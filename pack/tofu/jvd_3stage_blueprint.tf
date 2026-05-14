@@ -13,9 +13,9 @@ resource "apstra_datacenter_blueprint" "DC1-3Stage" {
                    apstra_interface_map.DC1-Leaf_QFX5110_48S,
                    apstra_interface_map.DC1-Leaf_QFX10002_36Q
     ]
-    fabric_addressing = "ipv4_ipv6"
+    underlay_addressing = "ipv4_ipv6"
+    vtep_addressing = "ipv4"
     fabric_mtu = 9170
-    ipv6_applications = true
     evpn_type_5_routes = true
     esi_mac_msb = 2
 }
