@@ -4,3 +4,6 @@ description: This is a config pack to build the 3 Stage Data Center Fabric with 
 supported_apstra_versions:
   - 5.1.0
   - 6.0.0
+tags:
+  type: Configuration
+  purpose: Feature
